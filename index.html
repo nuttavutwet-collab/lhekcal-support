@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lhekcal — ซัพพอร์ตและคำถามที่พบบ่อย</title>
+<style>
+  :root{
+    --bg:#0f1115; --card:#171a21; --text:#e8e9ec; --muted:#a3a8b5;
+    --accent:#4da3ff; --border:#262a33;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; padding:0; background:var(--bg); color:var(--text);
+    font-family:-apple-system, "Helvetica Neue", "Noto Sans Thai", Arial, sans-serif;
+    line-height:1.65;
+  }
+  .wrap{max-width:680px; margin:0 auto; padding:24px 20px 60px;}
+  header{padding:12px 0 20px;}
+  h1{font-size:1.6rem; margin:0 0 4px;}
+  .subtitle{color:var(--muted); font-size:0.95rem; margin:0;}
+  .card{
+    background:var(--card); border:1px solid var(--border); border-radius:14px;
+    padding:18px 20px; margin:16px 0;
+  }
+  h2{font-size:1.15rem; margin:0 0 10px; color:var(--accent);}
+  p{margin:0 0 10px; word-break:break-word;}
+  ul{margin:0; padding-left:20px;}
+  li{margin-bottom:8px;}
+  a{color:var(--accent); text-decoration:none; word-break:break-all;}
+  a:hover{text-decoration:underline;}
+  .faq-item{margin-bottom:16px;}
+  .faq-q{font-weight:600; margin-bottom:4px;}
+  .faq-a{color:var(--muted);}
+  footer{margin-top:28px; color:var(--muted); font-size:0.8rem; text-align:center;}
+  .btn{
+    display:inline-block; background:var(--accent); color:#0f1115;
+    padding:10px 16px; border-radius:10px; font-weight:600; margin-top:6px;
+  }
+  @media (max-width:420px){
+    .wrap{padding:16px 14px 50px;}
+    h1{font-size:1.35rem;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Lhekcal</h1>
+    <p class="subtitle">แอปคำนวณน้ำหนักเหล็กและโลหะ สำหรับผู้ใช้งานในไทย</p>
+  </header>
+
+  <div class="card">
+    <h2>แอปนี้ทำอะไร</h2>
+    <p>Lhekcal ช่วยคำนวณน้ำหนักเหล็กและโลหะรูปทรงต่าง ๆ (เหล็กกลม, เหล็กแบน, เหล็กฉาก, ท่อ ฯลฯ) จากขนาดและความยาวที่กรอก โดยอิงตารางและสูตรมาตรฐานที่ใช้กันทั่วไปในวงการเหล็ก</p>
+    <p>ผู้ใช้สามารถเลือกชนิดโลหะได้หลายชนิด (เหล็ก, สแตนเลส, อะลูมิเนียม ฯลฯ) เพื่อให้ค่าความหนาแน่นที่ใช้คำนวณถูกต้องตรงกับวัสดุจริง</p>
+    <p>ประวัติการคำนวณจะถูกบันทึกไว้ในเครื่องของผู้ใช้เองเท่านั้น เพื่อให้ย้อนดูหรือลบได้ภายหลัง</p>
+  </div>
+
+  <div class="card">
+    <h2>ติดต่อเรา</h2>
+    <p>หากพบปัญหาการใช้งาน มีข้อเสนอแนะ หรือต้องการแจ้งบั๊ก ส่งอีเมลมาได้ที่:</p>
+    <p><a href="mailto:bedtimestoryfornow@gmail.com">bedtimestoryfornow@gmail.com</a></p>
+    <p class="subtitle">เราพยายามตอบกลับภายใน 3-5 วันทำการ</p>
+  </div>
+
+  <div class="card">
+    <h2>คำถามที่พบบ่อย (FAQ)</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">1. ทำไมตัวเลขที่คำนวณได้ไม่เท่ากับที่ชั่งจริงบนตาชั่ง?</div>
+      <div class="faq-a">ตัวเลขในแอปเป็น "น้ำหนักทางทฤษฎี" ที่คำนวณจากสูตรเชิงเรขาคณิตและค่าความหนาแน่นมาตรฐานของวัสดุ ส่วนน้ำหนักจริงจากการชั่งอาจคลาดเคลื่อนได้เล็กน้อย (โดยทั่วไปไม่เกิน ±3-5%) เนื่องจากความคลาดเคลื่อนของขนาดจริงในการผลิต (tolerance), ความหนาแน่นที่ต่างกันเล็กน้อยตามแหล่งผลิต, และสภาพของผิวเหล็ก (สนิม, สารเคลือบ) แอปนี้ใช้สำหรับประมาณการเบื้องต้น ไม่ใช่ค่าชั่งที่แม่นยำระดับใช้ออกใบกำกับภาษีหรือสัญญาซื้อขาย</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">2. ถ้าขนาดที่ต้องการไม่มีอยู่ในตารางมาตรฐาน ทำอย่างไร?</div>
+      <div class="faq-a">แอปจะคำนวณจากสูตรเรขาคณิตของรูปทรงนั้นโดยตรง (เช่น พื้นที่หน้าตัด × ความยาว × ความหนาแน่น) แทนการเทียบตาราง ทำให้สามารถกรอกขนาดใด ๆ ได้แม้ไม่ตรงกับขนาดมาตรฐานที่มีขายทั่วไป</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">3. แอปเก็บข้อมูลอะไรบ้าง?</div>
+      <div class="faq-a">แอปเก็บเฉพาะประวัติการคำนวณ (ชนิดโลหะ รูปทรง ขนาด และผลลัพธ์) ไว้ในเครื่องของผู้ใช้เองเท่านั้น ไม่มีการสร้างบัญชีผู้ใช้และไม่ส่งข้อมูลเหล่านี้ออกไปที่เซิร์ฟเวอร์ใด ๆ แอปมีการแสดงโฆษณาผ่าน Google AdMob ซึ่งอาจมีการเก็บข้อมูลทางเทคนิคบางส่วนตามนโยบายของ Google อ่านรายละเอียดเพิ่มเติมได้ที่หน้า <a href="privacy.html">Privacy Policy</a></div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">4. ลบประวัติการคำนวณได้อย่างไร?</div>
+      <div class="faq-a">เข้าไปที่หน้าประวัติในแอป แล้วเลือกลบรายการที่ต้องการ หรือลบทั้งหมดได้จากเมนูตั้งค่า การลบแอปออกจากอุปกรณ์จะลบข้อมูลทั้งหมดที่เก็บไว้ในเครื่องไปด้วย</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">5. ทำไมมีโฆษณาในแอป และปิดได้ไหม?</div>
+      <div class="faq-a">แอปนี้ให้ใช้งานฟรี จึงมีโฆษณาแบบแบนเนอร์ (ไม่ปรับตามพฤติกรรมผู้ใช้) จาก Google AdMob เพื่อสนับสนุนการพัฒนาต่อเนื่อง ปัจจุบันยังไม่มีเวอร์ชันซื้อเพื่อปิดโฆษณา</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">6. ค่าความหนาแน่นของโลหะแต่ละชนิดมาจากไหน?</div>
+      <div class="faq-a">ค่าความหนาแน่นที่ใช้ในแอปอ้างอิงจากมาตรฐานวิศวกรรมที่ใช้กันทั่วไป (เช่นค่าของเหล็กกล้าคาร์บอน สแตนเลส อะลูมิเนียม ทองเหลือง ฯลฯ) ซึ่งอาจมีความคลาดเคลื่อนเล็กน้อยตามเกรดและแหล่งผลิตจริง</div>
+    </div>
+
+  </div>
+
+  <div class="card">
+    <h2>ลิงก์ที่เกี่ยวข้อง</h2>
+    <p><a href="privacy.html">นโยบายความเป็นส่วนตัว (Privacy Policy)</a></p>
+  </div>
+
+  <footer>
+    Lhekcal · จัดทำโดย Nuttavut Wetpanyawong<br>
+    หน้านี้อัปเดตล่าสุด: 2 พฤศจิกายน 2569 (2026-11-02)
+  </footer>
+</div>
+</body>
+</html>
